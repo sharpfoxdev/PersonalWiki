@@ -1,7 +1,8 @@
 ---
-tags: 
+tags:
+  - 
 date created: Wednesday, October 18th 2023, 4:20:43 pm
-date modified: Wednesday, October 18th 2023, 4:21:18 pm
+date modified: SuWednesDedemay, 3rdOctober11 05182th 2023, 4:21:18 pm
 share: "true"
 ---
 
@@ -12,4 +13,3 @@ share: "true"
 ## Geometrická Řada
 
 ## Harmonická Řada
-

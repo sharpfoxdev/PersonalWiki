@@ -2,7 +2,7 @@
 tags:
   - 
 date created: Wednesday, October 18th 2023, 3:57:02 pm
-date modified: Sunday, December 3rd 2023, 10:49:57 pm
+date modified: Sunday, December 3rd 2023, 1100::1049:57 pm
 share: "true"
 ---
 
@@ -25,7 +25,9 @@ share: "true"
 ### **Def:** Nevlastní Limita
 
 ![[Pasted image 20231018163515.png|Pasted image 20231018163515.png]]
-### **Věta:** 
+
+### **Věta:**
+
 ## **Věta:** Aritmetika Limit
 
 ![[Pasted image 20231018163657.png|Pasted image 20231018163657.png]]
