@@ -2,22 +2,22 @@
 tags:
   - 
 date created: Monday, October 2nd 2023, 8:17:54 pm
-date modified: Wednesday, October 18th 2023, 840::0822:15 pm
+date modified: Friday, December 1st 2023, 10:58:02 am
 share: "true"
 ---
 
 # 00 Základy Diferenciálního a Integrálního Počtu
 
 - NMAI054 Matematická analýza 1 (5 kr)
-
-- [[Užitečné Definice|Užitečné Definice]]
-- [[Posloupnosti Reálných Čísel a Jejich Limity|Posloupnosti Reálných Čísel a Jejich Limity]]
+- Texty k vypracovaným otázkám jsou převzaty z Poznámek k přednáškám z Matematické analýzy 1 od Víta Jelínka a Terezy Klimošové, 2019-2020
+- [[01 Užitečné Definice|01 Užitečné Definice]]
+- [[02 Posloupnosti Reálných Čísel a Jejich Limity|02 Posloupnosti Reálných Čísel a Jejich Limity]]
     - definice, aritmetika limit
     - věta o dvou policajtech, limity a uspořádání
-- [[Řady|Řady]]
+- [[03 Řady|03 Řady]]
     - definice částečného součtu a součtu
     - geometrická řada, harmonická řada
-- [[Reálné Funkce Jedné Reálné Proměnné|Reálné Funkce Jedné Reálné Proměnné]]
+- [[04 Reálné Funkce Jedné Reálné Proměnné|04 Reálné Funkce Jedné Reálné Proměnné]]
     - limita funkce v bodě
        - definice, aritmetika limit
        - vztah s uspořádáním
@@ -25,12 +25,12 @@ share: "true"
     - funkce spojité na intervalu
        - nabývání mezihodnot
        - nabývání maxima
-- Derivace a její aplikace
+- [[05 Derivace a Její Aplikace|05 Derivace a Její Aplikace]]
     - definice a základní pravidla pro výpočet
     - l’Hospitalovo pravidlo
     - vyšetření průběhu funkcí: extrémy, monotonie a konvexita/konkavita
     - Taylorův polynom (limitní forma)
-- Integrály a jejich aplikace
+- [[06 Integrály a Jejich Aplikace|06 Integrály a Jejich Aplikace]]
     - primitivní funkce: definice a metody výpočtu (substituce, per-partes)
     - Riemannův integrál: definice, souvislost s primitivní funkcí (Newtonovým integrálem)
     - aplikace
