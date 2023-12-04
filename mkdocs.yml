@@ -16,7 +16,7 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: purple
+      primary: black
       accent: deep orange
       toggle:
         icon: material/toggle-switch-off-outline
@@ -25,8 +25,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: yellow
-      accent: lime
+      primary: black
+      accent: yellow
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
