@@ -31,7 +31,7 @@ Podle volby programovacího jazyka
 - [[04 Rozhraní Periferních Zařízení a Jejich Obsluha|04 Rozhraní Periferních Zařízení a Jejich Obsluha]]
 	- Popsat roli řadiče zařízení při programem řízené obsluze zařízení (PIO), pro zadané adresy a funkce vstupních a výstupních portů implementovat programem řízenou obsluhu zadaného zařízení (myš, disk)
 	- Popsat roli přerušení při programem řízené obsluze zařízení (PIO), na úrovni vykonávání instrukcí popsat reakci procesoru (hardware) a operačního systému (software) na žádost o přerušení
-- [[05 Základní abstrakce, rozhraní a mechanizmy OS pro běh programů, sdílení prostředků a vstup/výstup|05 Základní abstrakce, rozhraní a mechanizmy OS pro běh programů, sdílení prostředků a vstup/výstup]]
+- [[05 Základní Abstrakce, Rozhraní a Mechanizmy OS pro Běh Programů, Sdílení Prostředků a Vstup Výstup|05 Základní Abstrakce, Rozhraní a Mechanizmy OS pro Běh Programů, Sdílení Prostředků a Vstup Výstup]]
 	- neprivilegované (uživatelské) procesy
 	- sdílení procesoru
 		- procesy, vlákna, kontext procesu a vlákna
