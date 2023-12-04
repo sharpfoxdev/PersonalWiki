@@ -4,8 +4,8 @@ site_url: https://sharpfoxdev.github.io/PersonalWiki/ # Change this to your site
 
 theme:
     name: 'material'
-    logo: assets/meta/favicons.png
-    favicon: assets/meta/favicons.png
+    logo: assets/meta/hopefullyFinal.png
+    favicon: assets/meta/hopefullyFinal.png
     custom_dir: overrides
     font:
         text: Ubuntu
