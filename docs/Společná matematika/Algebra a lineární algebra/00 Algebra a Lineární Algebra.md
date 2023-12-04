@@ -1,8 +1,6 @@
 ---
 tags:
   - 
-date created: Monday, October 2nd 2023, 8:17:54 pm
-date modified: Monday, December 4th 2023, 12:06:18 am
 share: "true"
 ---
 
