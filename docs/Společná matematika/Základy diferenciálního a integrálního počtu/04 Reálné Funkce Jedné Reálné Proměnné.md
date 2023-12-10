@@ -88,7 +88,7 @@ Funkce $f(x)$ je v bodě a spojitá zprava, pokud $\lim _{x \rightarrow a+} f(x)
 
 #### **Věta:** Limita Složené Funkce
 
-Nechť $A, B, C \in \mathbb{R}^{*}$, necht $g(x)$ je funkce splňujicí $\lim _{x \rightarrow A} g(x)=B$ a $f(x)$ je funkce splñujicí $\lim _{x \rightarrow B} f(x)=C$. Navíc necht' je splněna aspoň jedna z podminek $P 1$ a P2:
+Nechť $A, B, C \in \mathbb{R}^{*}$, necht $g(x)$ je funkce splňujicí $\lim _{x \rightarrow A} g(x)=B$ a $f(x)$ je funkce splňujicí $\lim _{x \rightarrow B} f(x)=C$. Navíc nechť je splněna aspoň jedna z podminek $P 1$ a P2:
 
 **P1**. Funkce $f(x)$ je spojitá v $B$ (jinými slovy, $f(B)=\lim _{x \rightarrow B} f(x)=C$ ).
 
