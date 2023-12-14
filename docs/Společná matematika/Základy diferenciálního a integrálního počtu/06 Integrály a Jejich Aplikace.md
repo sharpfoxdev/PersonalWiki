@@ -6,21 +6,35 @@ share: "true"
 
 # 06 Integrály a Jejich Aplikace
 
-## Primitivní Funkce
+## Primitivní Funkce: Definice a Metody Výpočtu (substituce, per-partes)
 
-### Definice
+- ze zadané derivace se snažíme zrekonstruovat funkci
+- test
+- hehe
 
-### Metody Výpočtu
+### **Def:** Primitivní Funkce
 
-#### Substituce
+### **Věta:** Primitivní Funkce Je Jednoznačná Až Na Konstantu
 
-#### Per-partes
+### **Věta:** Spojitá Funkce Má Primitivní Funkci
 
-## Riemannův Integrál
+### **Věta:** Součet Primitivních Funkcí
 
-### Definice
+### **Věta:** O Substituci
 
-### Souvislost S Primitivní Funkcí (Newtonovým integrálem)
+### **Věta:** Integrace per Partes
+
+## Riemannův Integrál: Definice, Souvislost S Primitivní Funkcí (Newtonovým integrálem)
+
+### **Def:** Newtonův Integrál
+
+### **Def:** Riemannův Integrál
+
+### **Věta:** 1. Základní Věta Analýzy
+
+### **Věta:** 2. Základní Věta Analýzy
+
+### **Věta:** Porovnání Newtonova a Riemannova Integrálu
 
 ## Aplikace
 
