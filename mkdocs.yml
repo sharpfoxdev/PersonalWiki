@@ -37,7 +37,7 @@ theme:
         - navigation.tabs.sticky
         - search.suggest
         - search.highlight
-
+extra_css: [extra.css]
 # Extensions
 markdown_extensions:
   - footnotes
