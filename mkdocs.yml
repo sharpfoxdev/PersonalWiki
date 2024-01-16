@@ -37,6 +37,7 @@ theme:
         - navigation.top
         - navigation.tabs
         - navigation.tabs.sticky
+        - navigation.footer
         - search.suggest
         - search.highlight
 extra_css: [extra.css]
