@@ -40,6 +40,9 @@ theme:
         - search.suggest
         - search.highlight
 extra_css: [extra.css]
+extra_javascript:
+  - 'assets/js/custom.js'
+
 # Extensions
 markdown_extensions:
   - footnotes
