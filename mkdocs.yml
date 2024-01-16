@@ -1,7 +1,7 @@
 site_name: SharpFoxDev Wiki # Change this to your site name
 site_description: Personal wiki of one MFF UK student. 
 site_url: https://sharpfoxdev.github.io/PersonalWiki/ # Change this to your site URL
-use_directory_urls: false
+
 theme:
     name: 'material'
     logo: assets/meta/fox99.png
@@ -37,8 +37,7 @@ theme:
         - navigation.tabs.sticky
         - search.suggest
         - search.highlight
-extra_css:
-  - stylesheets/extra.css
+
 # Extensions
 markdown_extensions:
   - footnotes
