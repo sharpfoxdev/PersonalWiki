@@ -108,10 +108,10 @@ hooks:
   - overrides/hooks/on_page_markdown.py
   - overrides/hooks/on_env.py
   - overrides/hooks/on_files.py
-#extra_javascript:
+extra_javascript:
   #- https://cdn.jsdelivr.net/gh/ObsidianPublisher/assets@main/dist/javascript.js
   #- https://polyfill.io/v3/polyfill.min.js?features=es6
-  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   #- assets/js/custom.js
 
 extra_css:
