@@ -48,5 +48,27 @@ DONT FORGET TO EDIT THE URL
     border: 0;
 }
 .md-typeset h1{
-  color: blue;
+  color: #E3E005;
+  font-size: 2.1em;
+  font-weight: 600;
+}
+.md-typeset h2{
+  color: #B9ADFF;
+  font-size: 1.9em;
+  font-weight: 600;
+}
+.md-typeset h3{
+  color: #52C1DA;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.md-typeset h4{
+  color: #67C073;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.md-typeset h5{
+  color: #DE87CA;
+  font-size: 1.3em;
+  font-weight: 500;
 }
