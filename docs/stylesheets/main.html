@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block styles %}
+    {{ super() }}
+    {% if extra_css|length == 0 %}<link href="{{ 'extra.css'|url }}" rel="stylesheet">{% endif %}
+{% endblock %}
