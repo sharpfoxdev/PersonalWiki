@@ -10,6 +10,7 @@ share: "true"
 - NMAI058 Lineární algebra 2 (5 kr)
 
 - [[01 Algebraické Struktury|01 Algebraické Struktury]]
+	- [hehe](<01 Algebraické Struktury>)
 	- grupy a podgrupy, permutace
 	- tělesa a speciálně konečná tělesa
 - [[02 Soustavy Lineárních Rovnic|02 Soustavy Lineárních Rovnic]]
