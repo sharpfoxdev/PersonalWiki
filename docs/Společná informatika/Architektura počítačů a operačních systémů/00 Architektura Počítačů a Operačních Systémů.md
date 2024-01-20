@@ -13,16 +13,15 @@ Podle volby programovacího jazyka
 - NPRG035 Programování v jazyce C# (1/5 z 5 kr)
 - NPRG041 Programování v jazyce C++ (1/5 z 5 kr)
 
+- otázky jsou vypracované pomocí ChatGPT4 a matfyz chatgpt bota
 
 - [[01 Základní Architektura Počítače, Reprezentace Čísel, Dat a Programů|01 Základní Architektura Počítače, Reprezentace Čísel, Dat a Programů]]
 	- reprezentace a přístup k datům v paměti, adresa, adresový prostor
 	- ukládání jednoduchých a složených datových typů
 	- základní aritmetické a logické operace
 - [[02 Instrukční Sada, Vazba Na Prvky Vyšších Programovacích Jazyků|02 Instrukční Sada, Vazba Na Prvky Vyšších Programovacích Jazyků]]
-	- Implementovat běžné programové konstrukce vyšších jazyků (přiřazení, podmínka, cyklus, volání funkce)
-	   pomocí instrukcí procesoru
-	- Zapsat běžnou konstrukci vyššího jazyka (přiřazení, podmínka, cyklus, volání funkce), která odpovídá
-	   zadané sekvenci (vysvětlených) instrukcí procesoru
+	- Implementovat běžné programové konstrukce vyšších jazyků (přiřazení, podmínka, cyklus, volání funkce) pomocí instrukcí procesoru
+	- Zapsat běžnou konstrukci vyššího jazyka (přiřazení, podmínka, cyklus, volání funkce), která odpovídá zadané sekvenci (vysvětlených) instrukcí procesoru
 - [[03 Podpora pro Běh Operačního Systému|03 Podpora pro Běh Operačního Systému]]
 	- privilegovaný a neprivilegovaný režim procesoru
 	- jádro operačního systému

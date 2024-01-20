@@ -78,7 +78,7 @@ share: "true"
 - **Networking**
 	- Handles network protocol stack and data transmission.
 
-### Types of Kernels (Typy Jader)
+### Types of Kernels
 
 - **Monolithic Kernels**
 	- Includes all system services in one large kernel.
