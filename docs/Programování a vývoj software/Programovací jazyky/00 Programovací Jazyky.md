@@ -22,8 +22,7 @@ společných požadavků z informatiky pro stejnou variantu.
 
 - [[01 Paralelní Programování a Synchronizace|01 Paralelní Programování a Synchronizace]]
 	- Vlákna, explicitní a implicitní vznik a zánik vláken
-	- Prostředky pro implicitní (synchronized, atomic) a explicitní (mutex, condition_variable, semaphore) syn-
-	   chronizaci
+	- Prostředky pro implicitní (synchronized, atomic) a explicitní (mutex, condition_variable, semaphore) synchronizaci
 	- Paralelní cykly, paralelně implementované knihovní funkce
 	- Další abstrakce paralelismu (task, future/promise)
 - [[02 Návrhové Vzory|02 Návrhové Vzory]]
