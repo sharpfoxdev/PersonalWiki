@@ -13,6 +13,8 @@ share: "true"
 Některé následující body definují varianty požadavků pro různé individuální volby povinně volitelných předmětů.
 Vyžaduje se zvládnutí obecných konceptů a zvládnutí jedné z konkrétních variant pro jazyk C#, C++ nebo Java.
 
+Otázky jsou vypracované pomocí ChatGPT4. 
+
 - [[01 Koncepty pro Abstrakci, Zapouzdření a Polymorfismus|01 Koncepty pro Abstrakci, Zapouzdření a Polymorfismus]]
 	- související konstrukty programovacích jazyků
 		- třídy, rozhraní, metody, datové položky, dědičnost, viditelnost
