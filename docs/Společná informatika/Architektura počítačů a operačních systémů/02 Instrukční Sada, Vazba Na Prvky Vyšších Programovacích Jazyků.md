@@ -5,7 +5,7 @@ share: "true"
 ---
 
 # 02 Instrukční Sada, Vazba Na Prvky Vyšších Programovacích Jazyků
-
+![[Pasted image 20240130001430.png|Pasted image 20240130001430.png]]
 ## Implementovat Běžné Programové Konstrukce Vyšších Jazyků (přiřazení, Podmínka, Cyklus, Volání funkce) Pomocí Instrukcí Procesoru
 
 ### Assignment (Přiřazení)
