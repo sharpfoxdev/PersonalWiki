@@ -11,6 +11,7 @@ share: "true"
 - NSWI143 Architektura počítačů (3 kr)
 - NSWI170 Počítačové systémy (5 kr)
 
+- otázky jsou vypracované pomocí ChatGPT4 a matfyz chatgpt bota
 - [[01 Organizace Paměti Za Běhu Programů|01 Organizace Paměti Za Běhu Programů]]
 	- Paměť procesu
 	- Dynamická alokace paměti
