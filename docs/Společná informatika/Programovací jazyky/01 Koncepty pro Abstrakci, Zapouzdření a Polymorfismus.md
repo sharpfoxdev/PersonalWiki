@@ -156,6 +156,63 @@ class Dog extends Animal {
 
 	- **Použití**: Používá se, když chceme zabránit odvozeným třídám v přepisování určité metody.
 
+### Ⓥ Virtuální a Nevirtuální Metody V C++
+
+- **Virtuální Metody**:
+	- Deklarovány pomocí klíčového slova `virtual`.
+	- Umožňují přetížení (override) v odvozených třídách.
+	- Podporují pozdní vazbu (runtime polymorfismus).
+	- Použití:
+		- Vytvoření ukazatele typu `Base*`, který ukazuje na objekt `Derived`.
+		- Volání `show()` vypíše "Derived class".
+
+```cpp
+class Base {
+public:
+	virtual void show() {
+		std::cout << "Base class\n";
+	}
+};
+
+class Derived : public Base {
+public:
+	void show() override {
+		std::cout << "Derived class\n";
+	}
+};
+```
+
+- **Nevirtuální Metody**:
+	- Standardní metody bez klíčového slova `virtual`.
+	- Neumožňují přetížení v odvozených třídách.
+	- Podporují časnou vazbu (compile-time polymorfismus).
+	- Použití:
+		- Vytvoření ukazatele typu `Base*`, který ukazuje na objekt `Derived`.
+		- Volání `display()` vypíše "Base class display".
+
+```cpp
+class Base {
+public:
+	void display() {
+		std::cout << "Base class display\n";
+	}
+};
+
+class Derived : public Base {
+public:
+	void display() {
+		std::cout << "Derived class display\n";
+	}
+};
+```
+
+- **Kdy Použít Virtuální Metody**:
+	- Když je potřeba umožnit odvozeným třídám změnit chování metody.
+	- Pro podporu polymorfismu.
+- **Kdy Použít Nevirtuální Metody**:
+	- Pro metody, které by neměly být přetíženy.
+	- Když je důležitý výkon (virtuální metody mohou být mírně pomalejší kvůli vazbě za běhu).
+
 ## Vícenásobná Dědičnost a Její Problémy
 
 Multiple inheritance can lead to various issues in object-oriented programming. One of the most notable issues is the Diamond Problem, where a class inherits from two classes that both inherit from a common base class. This can cause ambiguity and complications in the class hierarchy.
@@ -172,6 +229,10 @@ In C#, multiple inheritance of classes is not supported. However, C# allows a cl
 - **Example of Interface Implementation**:
 
     ```csharp
+
+
+
+
 
 
 

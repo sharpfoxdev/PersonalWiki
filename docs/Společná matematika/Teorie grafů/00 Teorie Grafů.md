@@ -10,8 +10,7 @@ share: "true"
 - NDMI011 Kombinatorika a grafy 1 (5 kr)
 
 - [[01 Základní Pojmy Teorie Grafů|01 Základní Pojmy Teorie Grafů]]
-	- graf, vrcholy a hrany, izomorfismus grafů, podgraf, okolí vrcholu a stupeň vrcholu, doplněk grafu, bipartitní
-	   graf
+	- graf, vrcholy a hrany, izomorfismus grafů, podgraf, okolí vrcholu a stupeň vrcholu, doplněk grafu, bipartitní graf
 - [[02 Základní Příklady Grafů|02 Základní Příklady Grafů]]
 	- úplný graf a úplný bipartitní graf, cesty a kružnice
 - [[03 Souvislost Grafů, Komponenty Souvislosti, Vzdálenost V Grafu|03 Souvislost Grafů, Komponenty Souvislosti, Vzdálenost V Grafu]]
