@@ -17,16 +17,23 @@ Podle volby programovacího jazyka
 
 
 Některé následující body definují varianty požadavků pro různé individuální volby povinně volitelných předmětů.
-Vyžaduje se zvládnutí obecných konceptů a zvládnutí jedné z konkrétních variant pro jazyk C#, C++ nebo Java, včetně
-společných požadavků z informatiky pro stejnou variantu.
+Vyžaduje se zvládnutí obecných konceptů a zvládnutí jedné z konkrétních variant pro jazyk C#, C++ nebo Java, včetně společných požadavků z informatiky pro stejnou variantu.
 
+- Programování v C++ 
+	- Sémantika syntaktických konstrukcí a konceptů jazyka (r-value reference, move sémantika, lambdy) 
+	- Běžné standardní knihovní typy, funkce a třídy, efektivita jejich používání
+- [[06 Programování V Dynamických Jazycích|06 Programování V Dynamických Jazycích]]
+	- Typové mechanismy dynamických jazyků, duck-typing, prototypy
+	- Imutabilní typy, boxing/unboxing
+- [[05 Statický vs. Dynamický Polymorfismus, Generické Programování, Typová Dedukce|05 Statický vs. Dynamický Polymorfismus, Generické Programování, Typová Dedukce]]
+	- Výkonové důsledky různých implementací polymorfismu
+	- Parametrizace generického kódu, politiky
+	- Použití šablon v C++ (typově parametrizovaný kontejner, datový typ s operátory
 - [[01 Paralelní Programování a Synchronizace|01 Paralelní Programování a Synchronizace]]
 	- Vlákna, explicitní a implicitní vznik a zánik vláken
 	- Prostředky pro implicitní (synchronized, atomic) a explicitní (mutex, condition_variable, semaphore) synchronizaci
 	- Paralelní cykly, paralelně implementované knihovní funkce
 	- Další abstrakce paralelismu (task, future/promise)
-- [[02 Návrhové Vzory|02 Návrhové Vzory]]
-	- Konkrétní návrhové vzory dle GoF, jejich aplikace
 - [[03 Komponenty, Dependency Injection|03 Komponenty, Dependency Injection]]
 	- Vlastnosti a účel komponent
 	- Reprezentace komponenty v objektovém programovacím jazyce
@@ -36,12 +43,8 @@ společných požadavků z informatiky pro stejnou variantu.
 	- Ⓥ Statická introspekce v C++ (type_traits), run-time introspekce a reflexe v C# a Javě
 	- Ⓥ Atributy v C++ a C#, anotace v Javě
 	- Použití introspekce
-- [[05 Statický vs. Dynamický Polymorfismus, Generické Programování, Typová Dedukce|05 Statický vs. Dynamický Polymorfismus, Generické Programování, Typová Dedukce]]
-	- Výkonové důsledky různých implementací polymorfismu
-	- Parametrizace generického kódu, politiky
-- [[06 Principy Dynamických Jazyků|06 Principy Dynamických Jazyků]]
-	- Typové mechanismy dynamických jazyků, duck-typing, prototypy
-	- Imutabilní typy, boxing/unboxing
+- [[02 Návrhové Vzory|02 Návrhové Vzory]]
+	- Konkrétní návrhové vzory dle GoF, jejich aplikace
 - [[07 Principy WWW, HTTP, URL, Statické Webové Stránky|07 Principy WWW, HTTP, URL, Statické Webové Stránky]]
 	- Tvorba statické webové stránky pomocí HTML a HTML5 (sémantické HTML tagy)
 	- HTML formuláře, vstupní prvky a validace
