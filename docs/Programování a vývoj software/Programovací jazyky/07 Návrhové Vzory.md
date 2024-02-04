@@ -13,6 +13,7 @@ Notes based on www.refactoring.guru
 ### Factory Method
 
 Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+![[Pasted image 20240204203819.png|Pasted image 20240204203819.png]]
 
 ### Abstract Factory
 
