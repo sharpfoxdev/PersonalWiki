@@ -6,8 +6,6 @@ share: "true"
 
 # 12 Základy Bezpečnosti Webových Aplikací
 
-# 12 Základy Bezpečnosti Webových Aplikací
-
 ## SQL Injection
 
 SQL Injection exploits vulnerabilities in an application's software by inserting or "injecting" malicious SQL commands into queries, manipulating the database to execute unintended actions.
