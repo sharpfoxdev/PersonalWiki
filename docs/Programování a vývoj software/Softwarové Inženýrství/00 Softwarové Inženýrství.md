@@ -31,7 +31,7 @@ share: "true"
 	- druhy development testování (unit, module, system testing)
 	- test-driven development
 	- inspekce softwarového kódu
-- [[04 Údržba (Software evolution)|04 Údržba (Software evolution)]]
+- [[04 Údržba (Software Evolution)|04 Údržba (Software Evolution)]]
 	- druhy údržby software (repair, adapt, add/modify functionality)
 	- faktory ovlivňující cenu údržby software
 - [[05 Analýza Rizik|05 Analýza Rizik]]
