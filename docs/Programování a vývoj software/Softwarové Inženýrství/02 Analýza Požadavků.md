@@ -52,6 +52,6 @@ share: "true"
 
 ❑This is practical for business systems but problematic for systems that require a lot of pre-delivery analysis (e.g. critical systems) or systems developed by several teams.
 
-## Validace Uživatelských Požadavků a Techniky Validace Požadavků (reviews, Prototyping, Generování Test-case)
+## Validace Uživatelských Požadavků a Techniky Validace Požadavků (Reviews, Prototyping, Generování Test-case)
 
 ## Využití UML Diagramů Případů Užití a UML Diagramů Tříd pro Analýzu a Záznam Požadavků
