@@ -8,7 +8,7 @@ share: "true"
 
 - NTIN060 Algoritmy a datové struktury 1 (3/5 z 5 kr)
 - NTIN061 Algoritmy a datové struktury 2 (1/5 z 5 kr)
-
+- Poznámky převzaté z Průvodce labyrintem algoritmů - Martin Mareš, Tomáš Valla
 - [[01 Časová Složitost Algoritmů|01 Časová Složitost Algoritmů]]
 	- časová a prostorová složitost algoritmu
 	- měření velikosti dat

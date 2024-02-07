@@ -8,6 +8,7 @@ share: "true"
 
 ## Klasifikace, Specifické Vlastnosti
 
+![[Pasted image 20240206160839.png|Pasted image 20240206160839.png]]
 Modern database systems encompass a wide array of technologies designed to store, retrieve, and manage data efficiently in various scenarios. Below is an overview of the main types of modern database systems and their specific properties.
 
 ### Relational Database Management Systems (RDBMS)
@@ -58,23 +59,25 @@ Broad category that encompasses several types of databases designed for large-sc
 
 ### Princip
 
+![[Pasted image 20240206191217.png|Pasted image 20240206191217.png]]
+![[Pasted image 20240206191232.png|Pasted image 20240206191232.png]]
+![[Pasted image 20240206191315.png|Pasted image 20240206191315.png]]
+![[Pasted image 20240206191428.png|Pasted image 20240206191428.png]]
+![[Pasted image 20240206191514.png|Pasted image 20240206191514.png]]
+![[Pasted image 20240206192026.png|Pasted image 20240206192026.png]]
+![[Pasted image 20240206192050.png|Pasted image 20240206192050.png]]
 MapReduce is a framework used for processing vast amounts of data across many machines in a cluster. It simplifies data processing on large scale, breaking down the tasks into smaller chunks, which are then processed in a parallel manner to improve efficiency and performance.
-
 - **Map Phase:**
 	- In the Map phase, the input dataset is divided into smaller sub-datasets. A map function is applied to each sub-dataset, which processes the data and produces key-value pairs as output.
 	- **Example:** Consider a dataset containing text documents. The map function processes each document and produces key-value pairs where the key is a word and the value is the number of occurrences of that word in the document.
-
 - **Shuffle and Sort Phase:**
 	- After the Map phase, the MapReduce framework collects all key-value pairs and sorts them by key. The sorting process assists in the subsequent Reduce phase, ensuring that all values for a single key are grouped together.
 	- **Example:** All key-value pairs produced by the map function are shuffled and sorted, grouping all occurrences of the same word together, making it easier to aggregate in the next step.
-
 - **Reduce Phase:**
 	- In the Reduce phase, the framework iterates over the sorted key-value pairs and passes them to the reduce function. The reduce function then aggregates the values for each key, producing a smaller set of key-value pairs as the final output.
 	- **Example:** The reduce function takes the key-value pairs for each word and sums up the counts, producing a single key-value pair per word with the total occurrences of that word across all documents.
-
 - **Application:**
 	- MapReduce is widely used in applications requiring large-scale data analysis, such as word count, log analysis, and data transformation operations. It is particularly beneficial in environments where the data is too vast to be processed on a single machine, requiring distributed processing to achieve reasonable performance times.
-
 - **Benefits:**
 	- **Scalability:** Easily processes petabytes of data by distributing the task across many machines.
 	- **Fault Tolerance:** Automatically handles failures in the cluster by rerunning failed tasks.
@@ -111,6 +114,7 @@ MapReduce's architecture is designed to solve problems involving large data sets
 
 ### Kritika
 
+![[Pasted image 20240206192224.png|Pasted image 20240206192224.png]]
 MapReduce has been a pivotal technology in big data processing, but it is not without its limitations and has faced criticism on several fronts:
 
 #### Performance Overhead
@@ -145,6 +149,10 @@ Consider a complex data analysis task that requires multiple transformations and
 
 ### Alternativní Přístupy
 
+![[Pasted image 20240206192408.png|Pasted image 20240206192408.png]]
+![[Pasted image 20240206192526.png|Pasted image 20240206192526.png]]
+![[Pasted image 20240206192559.png|Pasted image 20240206192559.png]]
+![[Pasted image 20240206192624.png|Pasted image 20240206192624.png]]
 The limitations of MapReduce have led to the development of several alternative data processing frameworks and models, each designed to overcome specific challenges associated with large-scale data processing.
 
 #### Apache Spark
@@ -180,29 +188,47 @@ The limitations of MapReduce have led to the development of several alternative 
 ## NoSQL Databáze
 
 NoSQL databases are designed to overcome limitations of RDBMS in handling big data and real-time web applications. They support a wide array of data models, including document, key-value, wide-column, and graph formats, offering scalability and performance benefits.
+![[Pasted image 20240206161119.png|Pasted image 20240206161119.png]]
+![[Pasted image 20240206161231.png|Pasted image 20240206161231.png]]
+![[Pasted image 20240206161311.png|Pasted image 20240206161311.png]]
+![[Pasted image 20240206161347.png|Pasted image 20240206161347.png]]
 
 ### Types of NoSQL Databases
 
-#### Document-Oriented Databases
+![[Pasted image 20240206165806.png|Pasted image 20240206165806.png]]
 
+#### Document-Oriented Databases
+![[Pasted image 20240206193721.png|Pasted image 20240206193721.png]]
+![[Pasted image 20240206193854.png|Pasted image 20240206193854.png]]
+![[Pasted image 20240206193923.png|Pasted image 20240206193923.png]]
+![[Pasted image 20240206194016.png|Pasted image 20240206194016.png]]
+![[Pasted image 20240206194059.png|Pasted image 20240206194059.png]]
+![[Pasted image 20240206194155.png|Pasted image 20240206194155.png]]
 - **Characteristics:** Store data as documents in formats like JSON, BSON, or XML, making them ideal for storing and querying document-based information.
 - **Examples:** MongoDB, CouchDB.
 - **Use Cases:** Content management systems, cataloging applications, and applications requiring flexible schemas.
 
 #### Key-Value Stores
 
+![[Pasted image 20240206193028.png|Pasted image 20240206193028.png]]
+![[Pasted image 20240206193138.png|Pasted image 20240206193138.png]]
+![[Pasted image 20240206193222.png|Pasted image 20240206193222.png]]
 - **Characteristics:** Store data as a collection of key-value pairs. They are highly partitionable and allow horizontal scaling.
-- **Examples:** Redis, DynamoDB.
+- **Examples:** Redis, DynamoDB, riak
 - **Use Cases:** Shopping carts, user sessions, and settings or preference storage for web applications.
 
 #### Wide-Column Stores
 
+![[Pasted image 20240206193258.png|Pasted image 20240206193258.png]]
+![[Pasted image 20240206193449.png|Pasted image 20240206193449.png]]
+![[Pasted image 20240206193556.png|Pasted image 20240206193556.png]]
+![[Pasted image 20240206193630.png|Pasted image 20240206193630.png]]
 - **Characteristics:** Store data in tables, rows, and dynamically named columns. They are optimized for queries over large datasets and offer high scalability and performance.
-- **Examples:** Apache Cassandra, Google Bigtable.
+- **Examples:** Apache Cassandra, Google Bigtable, H-Base
 - **Use Cases:** Internet search indexing, recommendation engines, and analyzing social media interactions.
 
 #### Graph Databases
-
+- see [[04 Moderní Databázové Systémy#Graph Databases|04 Moderní Databázové Systémy > Graph Databases]]
 - **Characteristics:** Use graph structures with nodes, edges, and properties to represent and store data. They are designed for data whose relationships are best represented as a graph.
 - **Examples:** Neo4j, Amazon Neptune.
 - **Use Cases:** Social networks, fraud detection systems, and graph-based search.
@@ -236,7 +262,16 @@ NoSQL databases are designed to overcome limitations of RDBMS in handling big da
 - **Data Integrity:** Without rigid schemas, ensuring data integrity requires careful application logic and validation.
 
 ## Grafové Databáze
-
+![[Pasted image 20240206194254.png|Pasted image 20240206194254.png]]
+![[Pasted image 20240206194331.png|Pasted image 20240206194331.png]]
+![[Pasted image 20240206194436.png|Pasted image 20240206194436.png]]
+![[Pasted image 20240206194645.png|Pasted image 20240206194645.png]]
+![[Pasted image 20240206194726.png|Pasted image 20240206194726.png]]
+![[Pasted image 20240206194749.png|Pasted image 20240206194749.png]]
+![[Pasted image 20240206194846.png|Pasted image 20240206194846.png]]
+![[Pasted image 20240206194930.png|Pasted image 20240206194930.png]]
+![[Pasted image 20240206195013.png|Pasted image 20240206195013.png]]
+![[Pasted image 20240206195048.png|Pasted image 20240206195048.png]]
 Graph databases are designed to handle data whose relationships are naturally represented as a graph and are characterized by their efficiency in traversing complex relationships among data points.
 
 ### Core Components
@@ -285,3 +320,9 @@ Graph databases are designed to handle data whose relationships are naturally re
 - **Complexity:** Implementing and querying graph databases can be complex, especially for those accustomed to relational models.
 - **Performance Scaling:** While graph databases excel in data relationship queries, ensuring performance at scale, particularly with very large graphs, requires careful architecture and indexing.
 
+
+![[Pasted image 20240206165343.png|Pasted image 20240206165343.png]]
+![[Pasted image 20240206165404.png|Pasted image 20240206165404.png]]
+![[Pasted image 20240206165422.png|Pasted image 20240206165422.png]]
+![[Pasted image 20240206165450.png|Pasted image 20240206165450.png]]
+![[Pasted image 20240206165514.png|Pasted image 20240206165514.png]]

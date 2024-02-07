@@ -7,7 +7,7 @@ share: "true"
 # 01 Architektury Databázových Systémů
 
 ## Konceptuální, Logická a Fyzická Úroveň Pohledů Na Data
-
+![[Pasted image 20240206160008.png|Pasted image 20240206160008.png]]
 ### Konceptuální Úroveň
 
 - **Definice:** Konceptuální úroveň poskytuje abstraktní pohled na celou databázi nezávisle na fyzických aspektech uložení dat. Je zaměřena na strukturu dat, jejich vztahy a omezení, než na to, jak jsou data skutečně uložena. Tato úroveň slouží jako most mezi reálným světem a logickou reprezentací dat v systému.
