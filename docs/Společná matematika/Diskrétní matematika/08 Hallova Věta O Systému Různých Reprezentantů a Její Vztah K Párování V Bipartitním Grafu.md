@@ -81,3 +81,7 @@ Definuji SRR jako $f(i) = x \in X$, pokud po hraně $(i, x)$ něco teče.
 # Princip Důkazu
 
 # Algoritmické Aspekty (Polynomiální Algoritmus pro Nalezení SRR)
+
+![[Pasted image 20240207232053.png|Pasted image 20240207232053.png]]![[Pasted image 20240207232231.png|Pasted image 20240207232231.png]]
+![[Pasted image 20240207232345.png|Pasted image 20240207232345.png]]
+![[Pasted image 20240207232330.png|Pasted image 20240207232330.png]]
