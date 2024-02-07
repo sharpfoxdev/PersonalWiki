@@ -7,6 +7,8 @@ share: "true"
 # 07 Návrhové Vzory
 
 Notes based on www.refactoring.guru
+*Aggregation*: object A contains objects B; B can live without A.  
+*Composition*: object A consists of objects B; A manages life cycle of B; B can’t live without A.
 
 ## Creational Patterns
 
@@ -168,13 +170,22 @@ Lets you compose objects into tree structures and then work with these structure
 -  **Use the pattern when you want the client code to treat both simple and complex elements uniformly.**
 	-  All elements defined by the Composite pattern share a common interface. Using this interface, the client doesn’t have to worry about the concrete class of the objects it works with.
 
-### Decorator
+### Decorator/Wrapper
 
 Lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
 #### Structure
 
+![[Pasted image 20240206215426.png|Pasted image 20240206215426.png]]
+![[Pasted image 20240206215655.png|Pasted image 20240206215655.png]]
+
 #### When to Use
+
+- **Use the Decorator pattern when you need to be able to assign extra behaviors to objects at runtime without breaking the code that uses these objects.**
+	- The Decorator lets you structure your business logic into layers, create a decorator for each layer and compose objects with various combinations of this logic at runtime. The client code can treat all these objects in the same way, since they all follow a common interface.
+
+- **Use the pattern when it’s awkward or not possible to extend an object’s behavior using inheritance.**
+	- Many programming languages have the `final` keyword that can be used to prevent further extension of a class. For a final class, the only way to reuse the existing behavior would be to wrap the class with your own wrapper, using the Decorator pattern.
 
 ### Facade
 
@@ -182,7 +193,17 @@ Provides a simplified interface to a library, a framework, or any other complex 
 
 #### Structure
 
+![[Pasted image 20240206220615.png|Pasted image 20240206220615.png]]
+![[Pasted image 20240206220721.png|Pasted image 20240206220721.png]]
+
 #### When to Use
+
+- **Use the Facade pattern when you need to have a limited but straightforward interface to a complex subsystem.**
+	- Often, subsystems get more complex over time. Even applying design patterns typically leads to creating more classes. A subsystem may become more flexible and easier to reuse in various contexts, but the amount of configuration and boilerplate code it demands from a client grows ever larger. The Facade attempts to fix this problem by providing a shortcut to the most-used features of the subsystem which fit most client requirements.
+
+- **Use the Facade when you want to structure a subsystem into layers.**
+	- Create facades to define entry points to each level of a subsystem. You can reduce coupling between multiple subsystems by requiring them to communicate only through facades.
+	- For example, let’s return to our video conversion framework. It can be broken down into two layers: videoand audio-related. For each layer, you can create a facade and then make the classes of each layer communicate with each other via those facades. This approach looks very similar to the [Mediator](https://refactoring.guru/design-patterns/mediator) pattern.
 
 ### Flyweight
 
@@ -190,7 +211,18 @@ Lets you fit more objects into the available amount of RAM by sharing common par
 
 #### Structure
 
+![[Pasted image 20240206221450.png|Pasted image 20240206221450.png]]
+![[Pasted image 20240206221909.png|Pasted image 20240206221909.png]]
+
 #### When to Use
+
+**Use the Flyweight pattern only when your program must support a huge number of objects which barely fit into available RAM.**
+
+The benefit of applying the pattern depends heavily on how and where it’s used. It’s most useful when:
+
+- an application needs to spawn a huge number of similar objects
+- this drains all available RAM on a target device
+- the objects contain duplicate states which can be extracted and shared between multiple objects
 
 ### Proxy
 
@@ -198,7 +230,36 @@ Lets you provide a substitute or placeholder for another object. A proxy control
 
 #### Structure
 
+![[Pasted image 20240206222200.png|Pasted image 20240206222200.png]]
+![[Pasted image 20240206222400.png|Pasted image 20240206222400.png]]
+
 #### When to Use
+
+**Lazy initialization (virtual proxy). This is when you have a heavyweight service object that wastes system resources by being always up, even though you only need it from time to time.**
+
+ Instead of creating the object when the app launches, you can delay the object’s initialization to a time when it’s really needed.
+
+ **Access control (protection proxy). This is when you want only specific clients to be able to use the service object; for instance, when your objects are crucial parts of an operating system and clients are various launched applications (including malicious ones).**
+
+ The proxy can pass the request to the service object only if the client’s credentials match some criteria.
+
+ **Local execution of a remote service (remote proxy). This is when the service object is located on a remote server.**
+
+ In this case, the proxy passes the client request over the network, handling all of the nasty details of working with the network.
+
+ **Logging requests (logging proxy). This is when you want to keep a history of requests to the service object.**
+
+ The proxy can log each request before passing it to the service.
+
+ **Caching request results (caching proxy). This is when you need to cache results of client requests and manage the life cycle of this cache, especially if results are quite large.**
+
+ The proxy can implement caching for recurring requests that always yield the same results. The proxy may use the parameters of requests as the cache keys.
+
+ **Smart reference. This is when you need to be able to dismiss a heavyweight object once there are no clients that use it.**
+
+ The proxy can keep track of clients that obtained a reference to the service object or its results. From time to time, the proxy may go over the clients and check whether they are still active. If the client list gets empty, the proxy might dismiss the service object and free the underlying system resources.
+
+The proxy can also track whether the client had modified the service object. Then the unchanged objects may be reused by other clients.
 
 ## Behavioral Patterns
 
@@ -208,7 +269,23 @@ Lets you pass requests along a chain of handlers. Upon receiving a request, each
 
 #### Structure
 
+![[Pasted image 20240206233432.png|Pasted image 20240206233432.png]]
+![[Pasted image 20240206233651.png|Pasted image 20240206233651.png]]
+The GUI classes are built with the Composite pattern. Each element is linked to its container element. At any point, you can build a chain of elements that starts with the element itself and goes through all of its container elements.
+
 #### When to Use
+
+**Use the Chain of Responsibility pattern when your program is expected to process different kinds of requests in various ways, but the exact types of requests and their sequences are unknown beforehand.**
+
+ The pattern lets you link several handlers into one chain and, upon receiving a request, “ask” each handler whether it can process it. This way all handlers get a chance to process the request.
+
+ **Use the pattern when it’s essential to execute several handlers in a particular order.**
+
+ Since you can link the handlers in the chain in any order, all requests will get through the chain exactly as you planned.
+
+ **Use the CoR pattern when the set of handlers and their order are supposed to change at runtime.**
+
+ If you provide setters for a reference field inside the handler classes, you’ll be able to insert, remove or reorder handlers dynamically.
 
 ### Command
 
@@ -216,7 +293,30 @@ Turns a request into a stand-alone object that contains all information about th
 
 #### Structure
 
+![[Pasted image 20240206234319.png|Pasted image 20240206234319.png]]
+![[Pasted image 20240206234640.png|Pasted image 20240206234640.png]]
+
 #### When to Use
+
+**Use the Command pattern when you want to parametrize objects with operations.**
+
+ The Command pattern can turn a specific method call into a stand-alone object. This change opens up a lot of interesting uses: you can pass commands as method arguments, store them inside other objects, switch linked commands at runtime, etc.
+
+Here’s an example: you’re developing a GUI component such as a context menu, and you want your users to be able to configure menu items that trigger operations when an end user clicks an item.
+
+ **Use the Command pattern when you want to queue operations, schedule their execution, or execute them remotely.**
+
+ As with any other object, a command can be serialized, which means converting it to a string that can be easily written to a file or a database. Later, the string can be restored as the initial command object. Thus, you can delay and schedule command execution. But there’s even more! In the same way, you can queue, log or send commands over the network.
+
+ **Use the Command pattern when you want to implement reversible operations.**
+
+ Although there are many ways to implement undo/redo, the Command pattern is perhaps the most popular of all.
+
+To be able to revert operations, you need to implement the history of performed operations. The command history is a stack that contains all executed command objects along with related backups of the application’s state.
+
+This method has two drawbacks. First, it isn’t that easy to save an application’s state because some of it can be private. This problem can be mitigated with the [Memento](https://refactoring.guru/design-patterns/memento) pattern.
+
+Second, the state backups may consume quite a lot of RAM. Therefore, sometimes you can resort to an alternative implementation: instead of restoring the past state, the command performs the inverse operation. The reverse operation also has a price: it may turn out to be hard or even impossible to implement.
 
 ### Iterator
 
@@ -224,7 +324,22 @@ Lets you traverse elements of a collection without exposing its underlying repre
 
 #### Structure
 
+![[Pasted image 20240206235115.png|Pasted image 20240206235115.png]]
+![[Pasted image 20240206235323.png|Pasted image 20240206235323.png]]
+
 #### When to Use
+
+ **Use the Iterator pattern when your collection has a complex data structure under the hood, but you want to hide its complexity from clients (either for convenience or security reasons).**
+
+ The iterator encapsulates the details of working with a complex data structure, providing the client with several simple methods of accessing the collection elements. While this approach is very convenient for the client, it also protects the collection from careless or malicious actions which the client would be able to perform if working with the collection directly.
+
+ **Use the pattern to reduce duplication of the traversal code across your app.**
+
+ The code of non-trivial iteration algorithms tends to be very bulky. When placed within the business logic of an app, it may blur the responsibility of the original code and make it less maintainable. Moving the traversal code to designated iterators can help you make the code of the application more lean and clean.
+
+ **Use the Iterator when you want your code to be able to traverse different data structures or when types of these structures are unknown beforehand.**
+
+ The pattern provides a couple of generic interfaces for both collections and iterators. Given that your code now uses these interfaces, it’ll still work if you pass it various kinds of collections and iterators that implement these interfaces.
 
 ### Mediator
 
