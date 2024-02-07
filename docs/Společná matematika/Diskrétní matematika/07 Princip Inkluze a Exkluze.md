@@ -24,11 +24,11 @@ $$\left|\bigcup_{i = 1}^{n} A_i\right| = \sum_{\emptyset \neq I \subseteq [n]} (
     - Existuje $\binom{j}{k}$ $k$-prvkových podmnožin $j$-prvkové množiny (a ve vzorci se znaménka střídají), lze počet výskytů vyjádřit následovně: 
 
 $$j - \binom{j}{2} + \binom{j}{3} - \ldots + (-1)^{j - 1}\binom{j}{j} = 1$$
-
+![[Pasted image 20240207201308.png|Pasted image 20240207201308.png]]
 ## Použití
 
 ### Šatnářka - The Hat-Check Problem (A Classic Example)
-
+![[Pasted image 20240207201337.png|Pasted image 20240207201337.png]]
 The Hat-Check Problem poses a scenario where \(n\) people check their hats at a restaurant, but upon leaving, the hats are randomly returned. The question typically asks for the probability that none of the \(n\) people receive their own hat back.
 
 #### Solution Approach Using PIE
