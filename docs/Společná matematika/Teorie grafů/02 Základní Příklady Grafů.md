@@ -13,6 +13,7 @@ share: "true"
 
 ## Úplný Bipartitní Graf
 
+![[Pasted image 20240207201934.png|Pasted image 20240207201934.png]]
 - **úplný bipartitní** $K_{m, n}$:
     - $V\left(K_{m, n}\right) = \{a_1, \ldots, a_m, b_1, \ldots, b_n\}$ (rozdělíme na 2 části)
     - $E\left(K_{m, n}\right) = \{\{a_i, b_j\} \mid i \in \left[m\right], j \in \left[n\right]\}$
