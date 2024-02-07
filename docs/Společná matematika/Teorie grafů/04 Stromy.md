@@ -25,6 +25,7 @@ share: "true"
 
 ## Ekvivalentní Charakteristiky Stromů
 
+![[Pasted image 20240207203804.png|Pasted image 20240207203804.png]]
 **Věta (Charakteristika stromu):** Následující tvrzení jsou ekvivalentní:
 
 1. **Standardní:** $G$ je souvislý a acyklický
