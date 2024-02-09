@@ -152,6 +152,9 @@ share: "true"
 
 ### Vysvětlit Rozdíl Mezi Virtuální a Fyzickou Adresou a Identifikovat, Zda Se V Zadaném Kontextu Či Fragmentu Kódu Používá Virtuální Nebo Fyzická Adresa
 
+![[Pasted image 20240208230617.png|Pasted image 20240208230617.png]]
+![[Pasted image 20240208230802.png|Pasted image 20240208230802.png]]
+![[Pasted image 20240208230823.png|Pasted image 20240208230823.png]]
 - **Virtual vs. Physical Address**
 	- **Virtual Address**
 		- Used by programs and seen by the operating system.
@@ -216,7 +219,8 @@ share: "true"
 
 ### Pro Konkrétní Adresy a Obsah Jednoúrovňové Stránkovací Tabulky Řešit Úlohy Překladu Adres
 
-// TODO check that this is correct, it looks iffy
+![[Pasted image 20240208230933.png|Pasted image 20240208230933.png]]
+![[Pasted image 20240208232018.png|Pasted image 20240208232018.png]]
 - **Overview of Single-Level Paging**
 	- Involves mapping virtual addresses to physical addresses using a paging table.
 	- Each entry in the table maps a virtual page to a physical frame.
@@ -227,16 +231,17 @@ share: "true"
 	- **Offset**: The same in both virtual and physical addresses, indicating the position within the page or frame.
 
 - **Example Address Translation Task**
+	- [Virtual To Physical Translation - Georgia Tech - HPCA: Part 4 - YouTube](https://www.youtube.com/watch?v=l7HoguhFVQ4)
 	- Given:
-		- Virtual Address: `0x1234`
-		- Page Size: `4KB` (implies 12-bit offset as 4KB = 2^12 bytes)
-		- Paging Table: Maps page `0x12` to frame `0x3A`
+		- Virtual Address: `0xFC51908B`
+		- Page Size: `4KB` (implies 12-bit offset as 4KB = 2^12 bytes - `08B` from the address)
+		- Paging Table: Maps page `0xFC519` to frame `0x00152`
 	- Task:
 		- Translate the given virtual address to its corresponding physical address.
 	- Solution:
-		- Extract Page Number: `0x12` from `0x1234`
-		- Find corresponding Frame Number in Paging Table: `0x3A`
-		- Combine Frame Number with Offset: Frame `0x3A` + Offset `0x34` = Physical Address `0x3A34`
+		- Extract Page Number: `0xFC519` from `0xFC51908B`
+		- Find corresponding Frame Number in Paging Table: 0x00152
+		- Combine Frame Number with Offset: Frame `0x00152` + Offset `08B` = Physical Address `0x0015208B`
 
 - **Practical Implications**
 	- **Efficiency**: Quick access to the paging table for translation.
