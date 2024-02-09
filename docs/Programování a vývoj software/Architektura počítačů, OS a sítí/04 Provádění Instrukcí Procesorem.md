@@ -86,7 +86,7 @@ share: "true"
 	- Divides instruction execution into several stages with different tasks.
 	- Each stage processes a part of the instruction, similar to an assembly line.
 - **Stages**
-	- Typically includes Fetch, Decode, Execute, Memory Access, and Write-back stages.
+	- Typically includes Instruction Fetch (IF), Decode (ID), Execute (EX), Memory Access (MEM), and Write-back (WB) stages.
 - **Advantages**
 	- Increases instruction throughput by processing multiple instructions simultaneously.
 	- Reduces the execution time of individual instructions.
@@ -95,6 +95,7 @@ share: "true"
 
 ### Superscalar Architecture
 
+- umím souběžně zpracovat víc instrukcí v té samé fázi
 - **Description**
 	- A type of CPU architecture that allows multiple instructions to be executed in parallel.
 - **Working Mechanism**
