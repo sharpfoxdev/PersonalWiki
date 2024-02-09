@@ -102,7 +102,8 @@ share: "true"
 	- Zjednodušuje správu závislostí v projektu.
 
 ## Staticky a Dynamicky Linkované Knihovny
-
+- statická - ve fázi linkování se dá linkeru celá knihovna (pytel .obj) - zabuduje se napevno do našeho zdrojáku
+- dynamická - přeloží se celá předem - za běhu jí může zdroják používat - dává se tam nepřímý odkaz - zavede se do paměti
 ### Staticky Linkované Knihovny
 
 - **Definice**:
